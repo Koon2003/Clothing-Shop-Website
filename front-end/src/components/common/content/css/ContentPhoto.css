@@ -1,0 +1,25 @@
+.random-image-container {
+    position: relative;
+    width: 100%;
+    /* Đặt chiều rộng tùy ý */
+    height: 1000px;
+    /* Đặt chiều cao tùy ý */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    /* Đặt text box ở góc phải */
+    align-items: flex-start;
+}
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Background mờ cho text box */
+    margin-top: 50px;
+    /* Khoảng cách từ mép trên của container */
+    margin-right: 100px;
+    padding: 20px;
+    width: 300px;
+    /* Đặt chiều rộng tùy ý */
+    /* Thêm styles khác nếu cần */
+}

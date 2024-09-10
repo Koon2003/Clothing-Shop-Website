@@ -1,0 +1,58 @@
+/* Existing CSS */
+.carousel {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.carousel-images {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel .image {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex; /* Ensure the container is flex to center the image */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.carousel .image.active {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Additional or updated CSS */
+.carousel .image img {
+    max-height: 200px; /* Set a maximum height for images */
+    width: 100%; /* Set width to 100% of parent */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.image-error {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}

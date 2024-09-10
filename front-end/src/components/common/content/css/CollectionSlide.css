@@ -1,0 +1,68 @@
+.collection-slide {
+    width: 100%;
+    margin: auto;
+    background-color: #c7cbd4;
+    /* Background gradient for slider */
+    background-image: linear-gradient(315deg, #85888e 0%, #d7d9db 74%);
+    padding: 20px; /* Add padding around the slider */
+    box-sizing: border-box; /* Ensure padding is included in the total width/height */
+}
+
+.collection-slide .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.collection-slide__item {
+    padding: 15px;
+    text-align: center;
+    background: #fff; /* White background for each slide */
+    margin: 0 5px; /* Spacing between slides */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for each slide */
+    position: relative; /* Allow positioning of the collection name */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.collection-slide__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Match image corners with item corners */
+    object-fit: cover;
+}
+
+/* Custom dots style */
+.collection-slide .slick-dots li button:before {
+    color: #000; /* Color of the dots */
+}
+
+.collection-name {
+    position: absolute; /* Absolute positioning */
+    bottom: 10px; /* Distance from the bottom of the slide */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* White text color */
+    padding: 5px 10px; /* Padding for the text */
+    border-radius: 5px; /* Rounded corners */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-family: 'SFUFuturaBookOblique', sans-serif; /* Font family */
+}
+
+.collection-title {
+    font-family: 'SFUFuturaBookOblique', sans-serif;
+    font-size: 3rem; /* Large font size */
+    font-weight: 1000; /* Bold font weight */
+    color: #ffffff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Dark shadow */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Block-level element */
+    text-align: center; /* Center text within element */
+    background: linear-gradient(#e4e5e6, #5d5d5d); /* Gradient text */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}

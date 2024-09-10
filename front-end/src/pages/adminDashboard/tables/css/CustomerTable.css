@@ -1,0 +1,41 @@
+/* CustomerTable.css */
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto;
+    min-width: 600px; /* Tùy chỉnh chiều rộng tối thiểu phù hợp với nội dung của bạn */
+}
+
+.table-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.filter-field {
+    margin-bottom: 10px;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .table-header {
+        flex-direction: column;
+    }
+    
+    .filter-field {
+        width: 100%;
+    }
+}
+
+/* Responsive for very small screens */
+@media screen and (max-width: 480px) {
+    .filter-field {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
